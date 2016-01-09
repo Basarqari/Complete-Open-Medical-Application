@@ -1,0 +1,323 @@
+﻿html, body {
+	/*Screen resolution testing*/
+	/*width: 480px;
+	height: 800px;
+	background-color: cream;*/
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.content,
+#app {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+	#app .win-splitviewpanetoggle {
+		float: left;
+	}
+
+	/* SplitView pane content style*/
+	#app .header {
+		white-space: nowrap;
+	}
+
+	#app .title {
+		font-size: 25px;
+		left: 50px;
+		margin-top: 6px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	#app .nav-commands {
+		margin-top: 20px;
+	}
+
+.win-splitviewcommand-button {
+	background-color: transparent;
+	color: red;
+}
+
+#app .win-splitview-pane-hidden .win-navbarcommand-button {
+	width: 46px;
+}
+
+#menu {
+	background-color: #2c3e50;
+	color: white !important;
+}
+
+#app .win-splitview-pane-closed .win-splitviewcommand-label {
+	/*  Make sure pane content doesn't scroll if 
+    SplitViewCommand label receives focus while pane is closed.
+    */
+	visibility: hidden;
+}
+
+/*SplitView pane style for different screen sizes*/
+#app.large .splitView {
+	width: 100%;
+}
+
+#app.large #menuButton {
+	display: none;
+	visibility: hidden;
+}
+
+#app.small #menuButton {
+	color: black;
+	position: relative;
+	z-index: 10000000;
+}
+
+#app.small .mainContent h1 {
+	padding-left: 24px;
+}
+
+/*SplitView content style*/
+#app .win-splitview-content {
+	background-color: #ecf0f1;
+}
+
+#app .contenttext {
+	margin-left: 20px;
+	margin-top: 6px;
+}
+
+#app .mainContent h1 {
+	margin-top: -10px;
+}
+
+#app .mainBoxMenu {
+	display: block;
+	position: absolute;
+}
+
+#app .menuBox {
+	min-width: 100px;
+	width: 150px;
+	min-height: 150px;
+	height: 100px;
+	margin: 5px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: central;
+	background-color: #3498db;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+}
+
+	#app .menuBox .fa {
+		font-size: 6em;
+		display: block;
+	}
+
+.mainContent {
+	display: block;
+}
+
+/* Find Patients */
+#findPatient {
+	position: absolute;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#repeater {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+	#repeater:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+
+#patientListRepeater h2 {
+	display: inline-block;
+	padding: 0 10px;
+	padding-bottom: 0;
+	margin-bottom: 8px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#patientListRepeater p {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+}
+
+#patientListRepeater .centralList {
+	border-left: 1px #3498db solid;
+	border-right: 1px #3498db solid;
+}
+
+#patientListRepeater {
+	text-align: center;
+	vertical-align: central;
+	border: 2px #2c3e50 solid;
+	background-color: white;
+	width: auto;
+	display: inline-block;
+	padding: 12px 8px;
+	margin: 4px;
+}
+
+	#patientListRepeater:hover {
+		background: #2c3e50;
+		color: white;
+	}
+
+	#patientListRepeater:active {
+		background: #2980b9;
+	}
+
+	#patientListRepeater .hiden {
+		display: none;
+	}
+
+/* Patient Details */
+#patientDetails {
+	position: absolute;
+	height: 100%;
+	width: calc(100% - 20px);
+	overflow-y: scroll;
+}
+
+#patientDetailsRepeater {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+	#patientDetailsRepeater:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+
+#searchLable {
+	width: auto;
+}
+
+#patientDetailsRepeater h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#patientDetailsRepeater h4 {
+	padding: 8px 0 4px 0;
+	margin: 0;
+	display: inline-block;
+	width: auto;
+	border-bottom: 1px #3498db solid;
+}
+
+#patientDetailsRepeater p {
+	padding: 0;
+	margin: 0;
+}
+
+/* Home Clock */
+.dateBox {
+	border: 1px #7f8c8d solid;
+	vertical-align: central;
+	margin: 10px;
+	padding: 10px 20px;
+	display: inline-block;
+	color: white;
+	background-color: #2c3e50;
+}
+
+	.dateBox #date {
+		color: #45a1de;
+	}
+
+/* Active Visits */
+#settings h3 {
+	padding: 15px 0 3px 0;
+	margin: 0;
+	display: inline-block;
+	width: auto;
+	border-bottom: 1px #3498db solid;
+}
+
+#settings p {
+	padding: 2px 0 0 0;
+	margin: 0;
+}
+
+/* Active Visits */
+#activeVisits {
+	position: absolute;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#visitsRepeater {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+	#visitsRepeater:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+
+#visitsListRepeater h3 {
+	display: inline-block;
+	padding: 0 10px;
+	padding-bottom: 0;
+	margin-bottom: 8px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#visitsListRepeater p {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+}
+
+#visitsListRepeater .centralList {
+	border-left: 1px #3498db solid;
+	border-right: 1px #3498db solid;
+}
+
+#visitsListRepeater {
+	text-align: center;
+	vertical-align: central;
+	border: 2px #2c3e50 solid;
+	background-color: white;
+	width: auto;
+	display: inline-block;
+	padding: 12px 8px;
+	margin: 4px;
+}
+
+	#visitsListRepeater:hover {
+		background: #2c3e50;
+		color: white;
+	}
+
+	#visitsListRepeater:active {
+		background: #2980b9;
+	}
+
+#nextButton {
+	margin-left: 50px;
+}
