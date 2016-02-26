@@ -59,13 +59,6 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="index.html" />
-    <Content Include="images\small-logo-openmrs-1.jpg" />
-    <Content Include="images\Splash-openmrs.jpg" />
-    <Content Include="images\Openmrs-logo-big.jpg" />
-    <Content Include="images\small-logo-openmrs.jpg" />
-    <Content Include="images\small-logo-openmrs-2.jpg" />
-    <Content Include="images\StoreLogo.png" />
-    <Content Include="images\Wide310x150Logo-openmrs.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\jquery-2.1.4.min.js" />
@@ -85,7 +78,7 @@
     <Content Include="WinJS\js\WinJS.intellisense-setup.js" />
     <Content Include="WinJS\js\WinJS.intellisense.js" />
     
-    <None Include="OpenMRSClient_TemporaryKey.pfx" />
+    <None Include="OpenClient_TemporaryKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
